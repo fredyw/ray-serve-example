@@ -5,10 +5,15 @@ description = "An example of Ray Serve with FastAPI"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-  "fastapi[standard]",
-  "httpx",
-  "ray[serve]",
-  "torch",
-  "transformers",
-  "uvicorn",
+    "fastapi[standard]>=0.115.13",
+    "httpx>=0.28.1",
+    "ray[serve]>=2.47.1",
+    "torch>=2.7.1",
+    "transformers>=4.52.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "ruff>=0.12.0",
 ]

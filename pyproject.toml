@@ -1,0 +1,14 @@
+[project]
+name = "ray-serve-example"
+version = "0.1.0"
+description = "An example of Ray Serve with FastAPI"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "fastapi[standard]",
+  "httpx",
+  "ray[serve]",
+  "torch",
+  "transformers",
+  "uvicorn",
+]

@@ -11,6 +11,7 @@ from ray import serve
 def start_ray():
     serve.run(model)
     yield
+    serve.shutdown()
     ray.shutdown()
 
 
